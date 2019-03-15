@@ -9,7 +9,7 @@ def show_all_relations(df):
     This function generates a matplotlib scatterplot for each unique data pair
     in a pandas dataframe.
     '''
-    #jettisons numerical data
+    #jettisons anything that isn't numerical data
     df = df.select_dtypes(include='number')
     pairs = []
     '''
